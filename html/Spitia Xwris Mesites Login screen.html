@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Σπίτια ΧΩΡΙΣ Μεσίτες-Login</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="buttons.css">
+	</head>
+	<style>
+	body{max-width:1100px; width:100%; margin:auto; background-color:darkslategray;}
+	</style>
+	
+	<body>
+	<h1 style="text-align:center; color:gold; font-family:Tahoma;">ΣΥΝΔΕΘΕΙΤΕ<br>&#8595;</h1>
+	<div style="text-align:center">
+		<div class="forma" style="background-color:white; border:4px solid black;">
+		<form action="USER_PROFILE_AFTER_LOGIN.html" onsubmit="return validateForm()" method="POST">
+			<h2 style="text-align:center;">LOGIN</h2>
+			<input type="text" id="uname" name="uname" placeholder="               Username"><br><hr>
+			<input type="password" minlength="8" id="ucode" name="ucode" placeholder="               Password"><br><br>
+			
+			<input style="background-color:green; border-radius: 12px;" type="submit" value="Login">
+			<input style="background-color:red; border-radius: 12px;" type="reset" value="Σβήσιμο">
+			</form><br>
+			<form action="spitia_xwris_mesites.html">
+					<button style="background-color:gold; border-radius:12px;">ΠΙΣΩ</button>
+			</form><br>
+			<script>
+    function validateForm() {
+  var uname = document.getElementById("uname").value;
+  var ucode = document.getElementById("ucode").value;
+
+  if (uname === "" || ucode === "") {
+    alert("Πρέπει να συμπληρώσετε όλα τα πεδία.");
+    return false;
+  }
+}
+		</script>
+		</div>
+	</div>
+	</body>
+
+
+</html>

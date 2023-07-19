@@ -1,0 +1,25 @@
+button {
+	animation-name: change;
+	 animation-duration: 2s;
+	 animation-iteration-count: infinite;
+	}
+	@keyframes change {
+	0% {
+	background-color: gold;
+	}
+	20% {
+	background-color: yellow;
+		}
+	40% {
+	background-color: green;
+	 }
+	60% {
+	background-color: darkblue;
+	 }
+	80% {
+	 background-color: purple;
+	 }
+	100% {
+	 background-color:red;
+	 }
+	}
